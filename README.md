@@ -33,6 +33,7 @@ I have created a [angular frontend](https://github.com/jdegand/LCOGT-angular-fro
 - Spring Boot 3.1
 - JPA
 - H2 Console
+- Lombok
 
 ## Thoughts
 
@@ -43,12 +44,12 @@ I have created a [angular frontend](https://github.com/jdegand/LCOGT-angular-fro
 - @Digits annotation seems better than @Pattern with a regex
 - Easy to swap databases in Spring Boot.  Not much has to be changed - add a driver dependency and update the `application.properties` file.
 - Constructor injection is better than field injection(@Autowired) for unit testing
-- You can write tests with H2 console although it is not advised.  But if you are using basic sql queries, you can do it.   
+- You can write tests with H2 console although it is not advised.  But if you are using basic sql queries, you can do it. 
+- Added Lombok - reduced boilerplate of Planet Entity
+- Added Tests - some overlap from the different layers - don't really have to test inherited JPA methods   
 
 ## Continued Development
 
-- Lombok
-- Tests
 - Database Integration / Removal of H2 Console
 - Query method exception
 
@@ -79,3 +80,9 @@ I have created a [angular frontend](https://github.com/jdegand/LCOGT-angular-fro
 - [Github](https://github.com/springframeworkguru/spring-boot-mariadb-example/blob/master/src/main/resources/application.properties) - mariadb
 - [Reflectoring](https://reflectoring.io/unit-testing-spring-boot/) - unit testing spring boot
 - [Blog](https://www.arhohuttunen.com/spring-boot-unit-testing/) - spring boot unit testing
+- [Stack Overflow](https://stackoverflow.com/questions/75298926/default-value-for-bigdecimal-using-lombok-builder) - default value for bigdecimal using lombok builder
+- [Stack Overflow](https://stackoverflow.com/questions/30834887/error-with-big-decimal-in-java) - error with big decimal in java
+- [Nasa](https://www.jpl.nasa.gov/edu/pdfs/ssbeads_answerkey.pdf) - Planet Distance Chart
+- [Stack Overflow](https://stackoverflow.com/questions/21480508/spring-mvc-tests-mockmvc-methods) - spring mvc test mockMvc methods
+- [Stack Overflow](https://stackoverflow.com/questions/52777107/cannot-resolve-andexpect-method-even-after-implementing-stackoverflow-answer) - andExpect not recognized
+- [Stack Overflow](https://stackoverflow.com/questions/59534247/spring-boot-mvc-test-mockmvc-is-always-null) - mockMvc is null
