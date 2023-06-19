@@ -47,8 +47,7 @@ I have created a [angular frontend](https://github.com/jdegand/LCOGT-angular-fro
 
 ## Continued Development
 
-- Lombok
-- Tests
+- Lombok / Tests added on separate 'lombok' branch 
 - Database Integration / Removal of H2 Console
 - Query method exception
 
