@@ -18,7 +18,7 @@ public class Planet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long planetId;
+    private Long id; // planetId originally - conflict in frontend interface and previously defined as id in express backend
 
     @Column(unique = true)
     @Length(max=8, min=3)
@@ -39,12 +39,12 @@ public class Planet {
     @Length(max = 400)
     private String description;
 
-    public Long getPlanetId() {
-        return planetId;
+    public Long getId() {
+        return id;
     }
 
-    public void setPlanetId(Long planetId) {
-        this.planetId = planetId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -87,8 +87,8 @@ public class Planet {
         this.description = description;
     }
 
-    public Planet(Long planetId, String name, BigDecimal size, BigDecimal distance, Integer ordinality, String description) {
-        this.planetId = planetId;
+    public Planet(Long id, String name, BigDecimal size, BigDecimal distance, Integer ordinality, String description) {
+        this.id = id;
         this.name = name;
         this.size = size;
         this.distance = distance;
@@ -100,7 +100,7 @@ public class Planet {
 
     @Override
     public String toString() {
-        return "Planet [planetId=" + planetId + ", name=" + name + ", size=" + size + ", distance=" + distance
+        return "Planet [id=" + id + ", name=" + name + ", size=" + size + ", distance=" + distance
                 + ", ordinality=" + ordinality + ", description=" + description + "]";
     }
 
