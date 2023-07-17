@@ -95,7 +95,7 @@ public class PlanetControllerTest {
  * // To test getting planets by id
  * 
  * Planet planetWithId = Planet.builder()
- * .planetId(1L)
+ * .id(1L)
  * .name("Saturn")
  * .size(new BigDecimal(95.2))
  * .distance(new BigDecimal(9.6))

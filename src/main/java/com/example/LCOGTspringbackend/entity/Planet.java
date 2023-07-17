@@ -26,7 +26,7 @@ public class Planet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long planetId;
+    private Long id;
 
     @Column(unique = true)
     @Length(max=8, min=3)
