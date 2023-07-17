@@ -2,7 +2,7 @@
 
 This is spring boot conversion of [my express solution](https://github.com/jdegand/LCOGT-takehomeinterview) to this [challenge](https://github.com/LCOGT/takehomeinterview).
 
-I have created a [angular frontend](https://github.com/jdegand/LCOGT-angular-frontend) that works with this backend.  
+I have created an [angular frontend](https://github.com/jdegand/LCOGT-angular-frontend) that works with this backend.  
 
 ## Screenshots
 
@@ -42,7 +42,7 @@ I have created a [angular frontend](https://github.com/jdegand/LCOGT-angular-fro
 - However, JPA query methods don't throw errors - they return nothing and have a 200 status code.
 - @Digits annotation seems better than @Pattern with a regex
 - Easy to swap databases in Spring Boot.  Not much has to be changed - add a driver dependency and update the `application.properties` file.
-- Constructor injection is better than field injection(@Autowired) for unit testing
+- Constructor injection is better than field injection(@Autowired) for unit testing.  
 - You can write tests with H2 console although it is not advised.  But if you are using basic sql queries, you can do it.   
 
 ## Continued Development
