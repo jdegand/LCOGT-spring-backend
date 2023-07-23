@@ -42,7 +42,8 @@ I have created an [angular frontend](https://github.com/jdegand/LCOGT-angular-fr
 - However, JPA query methods don't throw errors - they return nothing and have a 200 status code.
 - @Digits annotation seems better than @Pattern with a regex
 - Easy to swap databases in Spring Boot.  Not much has to be changed - add a driver dependency and update the `application.properties` file.
-- Constructor injection is better than field injection(@Autowired) for unit testing.     
+- Constructor injection is better than field injection(@Autowired) for unit testing. 
+- Added DBDataInitializer to add "Mars" to the database on start-up.  I used a SQL migration to add "Mars" to the database in my Express application.  
 
 ## Continued Development
 
@@ -77,3 +78,4 @@ I have created an [angular frontend](https://github.com/jdegand/LCOGT-angular-fr
 - [Github](https://github.com/springframeworkguru/spring-boot-mariadb-example/blob/master/src/main/resources/application.properties) - mariadb
 - [Reflectoring](https://reflectoring.io/unit-testing-spring-boot/) - unit testing spring boot
 - [Blog](https://www.arhohuttunen.com/spring-boot-unit-testing/) - spring boot unit testing
+- [Baeldung](https://www.baeldung.com/javax-bigdecimal-validation) - big decimal validation
