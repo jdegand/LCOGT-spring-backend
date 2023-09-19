@@ -1,6 +1,6 @@
 # LCOGT Spring Backend
 
-This is spring boot conversion of [my express solution](https://github.com/jdegand/LCOGT-takehomeinterview) to this [challenge](https://github.com/LCOGT/takehomeinterview).
+This is spring boot conversion of [my express solution](https://github.com/jdegand/LCOGT-takehomeinterview) to a past interview test from [LCOGT](https://github.com/LCOGT).
 
 I have created an [angular frontend](https://github.com/jdegand/LCOGT-angular-frontend) that works with this backend.  
 
@@ -36,6 +36,7 @@ I have created an [angular frontend](https://github.com/jdegand/LCOGT-angular-fr
 
 ## Thoughts
 
+- The interview challenge repo was long outdated before I started.  I used the repo to practice my skills as there are few Java take home tests on Github.  
 - Package names are not allowed to use dashes -> 'The original package name 'com.example.LCOGT-spring-backend' is invalid and this project uses 'com.example.LCOGTspringbackend' instead.' It is probably best to not use capitals either. 
 - H2 console does not automatically create a table (based on your schema) for you anymore - add `spring.jpa.hibernate.ddl-auto=create-drop` in application.properties
 - [JPA query methods](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods) save you a lot of time - many use cases are covered
