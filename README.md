@@ -1,6 +1,6 @@
 # LCOGT Spring Backend
 
-This is spring boot conversion of [my express solution](https://github.com/jdegand/LCOGT-takehomeinterview) to this [challenge](https://github.com/LCOGT/takehomeinterview).
+This is spring boot conversion of [my express solution](https://github.com/jdegand/LCOGT-takehomeinterview) to a past interview test from [LCOGT](https://github.com/LCOGT).
 
 I have created a [angular frontend](https://github.com/jdegand/LCOGT-angular-frontend) that works with this backend.  
 
